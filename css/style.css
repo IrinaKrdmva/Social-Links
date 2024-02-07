@@ -1,0 +1,75 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /*--PRIMARY--*/
+  --primary-green: hsl(75, 94%, 57%);
+  /*--NEUTRAL--*/
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 20%);
+  --dark-gray: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--font-regular);
+  font-size: 14px;
+  display: grid;
+  place-content: center;
+  min-block-size: 100vh;
+  background-color: var(--off-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  max-width: 16rem;
+  height: auto;
+}
+
+.card {
+  border-radius: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin: 0.25rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--dark-gray);
+}
+
+/*============= FOOTER ==============*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
