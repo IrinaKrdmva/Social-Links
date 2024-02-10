@@ -31,6 +31,9 @@ html {
 }
 
 body {
+  min-width: 375px;
+  max-width: 1440px;
+  color: var(--white);
   font-family: "Inter", sans-serif;
   font-weight: var(--font-regular);
   font-size: 14px;
@@ -52,21 +55,64 @@ main {
 }
 
 .card-container {
-  max-width: 16rem;
+  max-width: 20rem;
   height: auto;
 }
 
 .card {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   text-align: center;
   padding: 10px;
-  margin: 0.25rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   background-color: var(--dark-gray);
 }
 
+.card-img {
+  border-radius: 6rem;
+  width: 5rem;
+  margin: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+}
+
+.card-subtitle {
+  color: var(--primary-green);
+  font-size: small;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  font-size: small;
+  margin: 1.5rem;
+  font-weight: var(--font-semibold);
+}
+
+.card-social {
+  display: grid;
+}
+
+.card-link {
+  background-color: var(--gray);
+  gap: 1rem;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-weight: var(--font-bold);
+}
+
+.card-link:hover,
+.card-link:focus,
+.card-link:active {
+  background-color: var(--primary-green);
+  color: var(--off-black);
+}
+
 /*============= FOOTER ==============*/
 .attribution {
+  margin: 1rem;
   font-size: 11px;
   text-align: center;
 }
